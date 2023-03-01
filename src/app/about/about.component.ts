@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SimpleChartService } from '../simple-chart/simple-chart.service';
 import { AboutService } from './about.service';
 
 @Component({
@@ -13,7 +14,7 @@ import { AboutService } from './about.service';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private aboutService: AboutService) { }
+  constructor(private aboutService: AboutService, private simpleChartService: SimpleChartService) { }
 
   ngOnInit(): void {
     this.aboutService.value = 2;
