@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "di-pruebas"
+  "defaultProject": "di-pruebas",
+  "cli": {
+    "analytics": false
+  }
 }
